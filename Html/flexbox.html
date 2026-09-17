@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .containers {
+            display: flex;
+            flex-direction: row; /* arranges the boxes in a row / column */
+            justify-content: center;/* distributes the boxes evenly with space around them */
+            height: 90vh; /* sets the height of the container to the full height of the viewport */
+            outline: 2px solid #7817d8;
+            align-items: center; /* vertically centers the boxes within the container */
+            flex-wrap: wrap; /* allows the boxes to wrap to the next line if necessary */
+        }
+        .containers > div {
+            background-color: #111010;
+            color: #fff;
+            height: 100px;
+            align-content: center;
+            text-align: center;
+            
+        }
+        #box1{
+                flex-basis: 200px; /* minimum width of the box */
+
+                background-color: #d5856c;
+                flex-grow: 0; /* allows the box to grow and fill the available space */
+                flex-shrink: 0; /* allows the box to shrink if necessary */
+                flex-wrap: nowrap; /* allows the box to wrap to the next line if necessary */
+        } 
+        #box2{
+                flex-basis: 200px; 
+                background-color: #5682c4;
+                flex-grow: 0 ;
+                flex-shrink: 0; /* allows the box to shrink if necessary */
+                /* flex : 2 2 200px; shorthand for flex-grow, flex-shrink, and flex-basis */
+
+        }
+        #box3{
+                flex-basis: 200px; 
+                background-color: #afbc4d;
+                flex-grow: 0; 
+                flex-shrink: 0;
+        }
+        #box4{
+                flex-basis: 200px; 
+                background-color: #c44f4f;
+                flex-grow: 0; 
+                flex-shrink: 0;
+        }
+        #box5{
+                flex-basis: 200px; 
+                background-color: #4f9c4f;
+                flex-grow: 0; 
+                flex-shrink: 0;
+        }
+        #box6{
+                flex-basis: 200px; 
+                background-color: #4f4f9c;
+                flex-grow: 0; 
+                flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="containers">
+        <div id="box1">1</div>
+        <div id="box2">2</div>
+        <div id="box3">3</div>
+        <div id="box4">4</div>
+        <div id="box5">5</div>
+        <div id="box6">6</div>
+    </div>
+    
+</body>
+</html>

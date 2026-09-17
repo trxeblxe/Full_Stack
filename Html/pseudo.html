@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            
+            border: none;
+            color: rgb(216, 146, 146);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+            color: rgb(35, 15, 15);
+        }
+         button:focus {
+            background-color: red;
+            outline: none;
+        }
+        button:active {
+            background-color: grey;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+        input[type="checkbox"]:checked {
+            box-shadow: #45a049;
+            background-color: #984f00;
+            accent-color: #ec3e04;
+        }
+        input[type="checkbox"]:focus {
+            outline: 2px solid #7817d8;
+        }
+
+
+        a:link {
+            text-decoration: none;
+            color: #f1400a;
+        }
+        a:visited {
+            color: #95f10a;
+        }
+        a:hover {
+            color: #06a0e8;
+        }
+        
+        </style>
+
+</head>
+<body>
+    <button>Click Me!!</button><br>
+    <input type="checkbox" ><br>
+    <a href="https://www.google.com" target="_blank">Google</a><br>
+    <a href="LINK" target="_blank">LINK</a>
+
+
+    <form action="" method="get">
+        <input type="text" name="q" placeholder="Search..."><br>     
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>

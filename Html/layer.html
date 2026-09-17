@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @layer base, meow,special ;
+        @layer base{
+        .para{
+            color: blue;
+            font-size: 20px;
+        } 
+    } 
+        @layer special{
+            .highlighted-para{
+                color: red;
+                font-size: 30px;
+            }
+        }
+        @layer meow{
+            .meow{
+                font-size: 50px;
+                color:brown
+            }
+        }   
+    </style>
+</head>
+<body>
+    <p class="para meow highlighted-para ">Hello, World!</p>
+</body>
+</html>

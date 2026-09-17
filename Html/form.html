@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         input:invalid{
+            background-color: #ef0a0a;
+
+        }
+         input:read-only
+        {
+           
+            background-color: #5a5454;
+        }
+        input:required {
+            border: 0px 0px 2px 0px ;
+            border-color: #f1400a;
+
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="name" id="name" placeholder="Enter your name" required><br>
+        <input type="text" name="Mr"placeholder="MR" read-only><br>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required><br>
+        <input type="number" placeholder ="age" range="1-100" min="0" max="100" required>
+        <input type="button" value="submit">
+    </form>
+</body>
+</html>
