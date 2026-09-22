@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 30rem;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
+}
+@custom-variant dark (&:where(.dark, .dark *));
+
+.heading {
+    @apply text-4xl font-bold text-blue-500  ;
+}
+
